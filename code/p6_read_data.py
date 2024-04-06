@@ -1,4 +1,5 @@
 import os
+
 from PIL import Image
 from torch.utils.data import Dataset
 
@@ -21,7 +22,7 @@ class MyData(Dataset):
         return len(self.img_path)
 
 
-root_dir = "dataset/train"
+root_dir = "../data/hymenoptera_data/train"
 ants_label_dir = "/ants"
 bees_label_dir = "/bees"
 ants_dataset = MyData(root_dir, ants_label_dir)
