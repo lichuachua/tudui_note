@@ -7,7 +7,8 @@ from torchvision import transforms
 # 2.为什么需要tensor类型
 
 # PIL Images
-img_path = "dataset/train/ants/0013035.jpg"
+
+img_path = "../data/hymenoptera_data/train/ants/0013035.jpg"
 img = Image.open(img_path)
 print(img)
 tensor_trans = transforms.ToTensor()
